@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>LeadDev</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog Template">
+    <meta name="author" content="Xiaoying Riley at 3rd Wave Media">    
+    <link rel="shortcut icon" href="../favicon.ico"> 
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-1.css">
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Adil's Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Adil Ali.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/adil-ali-b4a87587/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">DevBlog - A Blog Made For Developers</h2>
+			    <!-- <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
+			    <form class="signup-form form-inline justify-content-center pt-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail">Your email</label>
+                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form> -->
+		    </div><!--//container-->
+	    </section>
+
+        <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Mob Programming</h2>
+				    <div class="meta mb-3"><span class="date">Published April 17, 2020</span><span class="time">5 min read</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+                    <p>&quot;All the brilliant people working on the same thing, at the same time, in the same place, and on the same computer.&quot; ~ Woody Zuill</p>
+                    <h1>Start of Session</h1>
+                    <ul>
+                        <li>Define goal.</li>
+                    </ul>
+                    <h1>Tips:</h1>
+                    <ul>
+                        <li><strong>Rotate on timer</strong>: Whoever is on the keyboard moves away and makes space for the next one. Timer is in scale of minutes.</li>
+                        <li><strong>No decisions on the keyboard</strong>: This is not a group watching one work. Whatever happens at the keyboard is initiated from navigators.</li>
+                        <li><strong>Highest level of abstraction</strong>: Navigate on highest level of abstraction driver can consume. Tell your intent as a navigator. If more is needed, you see it from the lack of movement at the keyboard.</li>
+                        <li><strong>G</strong><strong>ive preference</strong>: Don&rsquo;t force your idea. Always give preference to someone else&rsquo;s idea. You know how you code and you can always do the exercise on your own later.</li>
+                        <li><strong>Don&rsquo;t shout or interrupt</strong>: Let other people speak. The session is meant to be a pleasant learning experience. If things are not going your way, calm down, sit back and try to learn a different way of doing things.</li>
+                        <li><strong>Don&rsquo;t discuss for too long</strong>: Pick an idea and run with it. We can always refactor later. Avoid analysis paralysis.</li>
+                        <li><strong>Constantly move forward</strong>: If the mob doesn&rsquo;t decide, driver should start typing and move forward * or stop the clock and decide on a goal.</li>
+                        <li><strong>One idea for at least 5 minutes</strong>: It&rsquo;s OK to change directions but once majority decided on one approach, avoid throwing many different ideas. We need some time for an idea to mature before we move to another one.</li>
+                        <li><strong>Objections are noted</strong>: Objections to the current idea are noted in the code or whiteboard if someone is really frustrated, but the team still moves on.</li>
+                        <li><strong>Commit to creating a safe environment</strong>: We want to avoid the situation where one or two personalities dominate all discussion in the group. It&rsquo;s ok for the first few minutes to be with one voice, but you want to quickly get to the point where the whole team is contributing and being heard.</li>
+                    </ul>
+                    <p style="margin-left: 40px;">Woody introduces this as:</p>
+                    <pre style="margin-left: 40px;">We make a commitment to treat each with kindness, respect and consideration</pre>
+                    <ul style="margin-left: 40px; list-style-type: square;">
+                        <li>Each word is carefully chosen.</li>
+                        <li>Kindness is about being polite and expressing concern for your mob.</li>
+                        <li>Respect is about disagreeing with ideas without attacking people. You don&rsquo;t want to hear &ldquo;That&rsquo;s a stupid idea&rdquo;. But you also do want respectful disagreement.</li>
+                        <li>Consideration is about listening to other peoples ideas. Most developers are used to solving problems in their way. But now we need to work in a way where we listen to other ideas. Sometimes we can build upon them and sometimes they will conflict. If you have two options, just commit to trying one. You can revert the code if it doesn&rsquo;t work out and try the other idea.</li>
+                    </ul>
+                    <h1>Reference:</h1>
+                    <ul>
+                        <li>https://mobprogrammingguidebook.xyz/Download/MobProgrammingGuidebook.pdf</li>
+                    </ul>
+                    <p><br></p>
+			    </div>				
+		    </div><!--//container-->
+        </article>
+        
+	    
+	    <footer class="navbar fixed-bottom footer text-center py-2 theme-bg-dark">
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> for developers</small>
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script> 
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html> 
