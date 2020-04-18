@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en"> 
+<head>
+    <title>LeadDev</title>
+    
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Blog">
+    <meta name="author" content="Adil Ali">    
+    
+    <!-- FontAwesome JS-->
+    <script defer src="https://use.fontawesome.com/releases/v5.7.1/js/all.js" integrity="sha384-eVEQC9zshBn0rFj4+TU78eNA19HMNigMviK/PU/FFjLXqa/GKPgX58rvt5Z8PLs7" crossorigin="anonymous"></script>
+    
+    <!-- Theme CSS -->  
+    <link id="theme-style" rel="stylesheet" href="../assets/css/theme-1.css">
+
+</head> 
+
+<body>
+    
+    <header class="header text-center">	    
+	    <h1 class="blog-name pt-lg-4 mb-0"><a href="../index.html">Adil's Blog</a></h1>
+        
+	    <nav class="navbar navbar-expand-lg navbar-dark" >
+           
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+			</button>
+
+			<div id="navigation" class="collapse navbar-collapse flex-column" >
+				<div class="profile-section pt-3 pt-lg-0">
+				    <img class="profile-image mb-3 rounded-circle mx-auto" src="../assets/images/profile.png" alt="image" >			
+					
+					<div class="bio mb-3">Hi, my name is Adil Ali.<br><a href="../about.html">Find out more about me</a></div><!--//bio-->
+					<ul class="social-list list-inline py-3 mx-auto">
+						<li class="list-inline-item"><a href="https://www.linkedin.com/in/adil-ali-b4a87587/"><i class="fab fa-linkedin-in fa-fw"></i></a></li>
+			        </ul><!--//social-list-->
+			        <hr> 
+				</div><!--//profile-section-->
+				
+				<ul class="navbar-nav flex-column text-left">
+					<li class="nav-item active">
+					    <a class="nav-link" href="../index.html"><i class="fas fa-home fa-fw mr-2"></i>Blog Home <span class="sr-only">(current)</span></a>
+					</li>
+					<li class="nav-item">
+					    <a class="nav-link" href="../about.html"><i class="fas fa-user fa-fw mr-2"></i>About Me</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+    </header>
+    
+    <div class="main-wrapper">
+	    <section class="cta-section theme-bg-light py-5">
+		    <div class="container text-center">
+			    <h2 class="heading">DevBlog - A Blog Made For Developers</h2>
+			    <!-- <div class="intro">Welcome to my blog. Subscribe and get my latest blog post in your inbox.</div>
+			    <form class="signup-form form-inline justify-content-center pt-3">
+                    <div class="form-group">
+                        <label class="sr-only" for="semail">Your email</label>
+                        <input type="email" id="semail" name="semail1" class="form-control mr-md-1 semail" placeholder="Enter email">
+                    </div>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form> -->
+		    </div><!--//container-->
+	    </section>
+
+        <article class="blog-post px-3 py-5 p-md-5">
+		    <div class="container">
+			    <header class="blog-post-header">
+				    <h2 class="title mb-2">Clean Code</h2>
+				    <div class="meta mb-3"><span class="date">Published April 10, 2020</span><span class="time">15 min read</span></div>
+			    </header>
+			    
+			    <div class="blog-post-body">
+                    <style type="text/css">
+                        p.p1 {
+                            margin: 0.0px 0.0px 0.0px 0.0px;
+                            font: 12.0px 'Helvetica Neue'
+                        }
+                    
+                        p.p2 {
+                            margin: 0.0px 0.0px 0.0px 0.0px;
+                            font: 12.0px 'Helvetica Neue';
+                            min-height: 14.0px
+                        }
+                    </style>
+                    <h2 class="p1">Code is clean if it can be understood easily &ndash; by everyone on the team.</h2>
+                    <p class="p1"><br></p>
+                    <p class="p1">Clean code can be read and enhanced by a developer other than its original author.<span class="Apple-converted-space">&nbsp;&nbsp;</span>With understandability comes readability, changeability, extensibility and maintainability.</p>
+                    <p class="p2"><br></p>
+                    <h3 class="p1">General rules</h3>
+                    <p class="p1">1. Follow standard conventions.</p>
+                    <p class="p1">2. Keep it simple stupid. Simpler is always better. Reduce complexity as much as possible.</p>
+                    <p class="p1">3. Boy scout rule. Leave the campground cleaner than you found it.</p>
+                    <p class="p1">4. Always find root cause. Always look for the root cause of a problem.</p>
+                    <p class="p2"><br></p>
+                    <h3 class="p1">Design rules</h3>
+                    <p class="p1">1. Keep configurable data at high levels.</p>
+                    <p class="p1">2. Prefer polymorphism to if/else or switch/case.</p>
+                    <p class="p1">3. Separate multi-threading code.</p>
+                    <p class="p1">4. Prevent over-configurability.</p>
+                    <p class="p1">5. Use dependency injection.</p>
+                    <p class="p1">6. Follow Law of Demeter. A class should know only its direct dependencies.</p>
+                    <p class="p2"><br></p>
+                    <h3 class="p1">Understandability tips</h3>
+                    <p class="p1">1. Be consistent. If you do something a certain way, do all similar things in the same way.</p>
+                    <p class="p1">2. Use explanatory variables.</p>
+                    <p class="p1">3. Encapsulate boundary conditions. Boundary conditions are hard to keep track of. Put the processing for them in one place.</p>
+                    <p class="p1">4. Prefer dedicated value objects to primitive type.</p>
+                    <p class="p1">5. Avoid logical dependency. Don&#39;t write methods which works correctly depending on something else in the same class.</p>
+                    <p class="p1">6. Avoid negative conditionals.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Names rules</h3>
+                    <p class="p1">1. Choose descriptive and unambiguous names.</p>
+                    <p class="p1">2. Make meaningful distinction.</p>
+                    <p class="p1">3. Use pronounceable names.</p>
+                    <p class="p1">4. Use searchable names.</p>
+                    <p class="p1">5. Replace magic numbers with named constants.</p>
+                    <p class="p1">6. Avoid encodings. Don&#39;t append prefixes or type information.</p>
+                    <p class="p1">7. * Short function names for big scopes.</p>
+                    <p class="p1"><span class="Apple-converted-space">&nbsp; &nbsp;</span>* Long function names for small private scope</p>
+                    <p class="p1"><span class="Apple-converted-space">&nbsp; &nbsp;</span>* Small variable names for small private scopes ex. for i = 1 to 10;</p>
+                    <p class="p1"><span class="Apple-converted-space">&nbsp; &nbsp;</span>* Long variable names for big scope ex. global variables.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Functions rules</h3>
+                    <p class="p1">1. Small.</p>
+                    <p class="p1">2. Do one thing.</p>
+                    <p class="p1">3. Use descriptive names.</p>
+                    <p class="p1">4. Prefer fewer arguments.</p>
+                    <p class="p1">5. Have no side effects.</p>
+                    <p class="p1">6. Don&#39;t use flag arguments. Split method into several independent methods that can be called from the client without the flag.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Comments rules</h3>
+                    <p class="p1">1. Always try to explain yourself in code.</p>
+                    <p class="p1">2. Don&#39;t be redundant.</p>
+                    <p class="p1">3. Don&#39;t add obvious noise.</p>
+                    <p class="p1">4. Don&#39;t use closing brace comments.</p>
+                    <p class="p1">5. Don&#39;t comment out code. Just remove.</p>
+                    <p class="p1">6. Use as explanation of intent.</p>
+                    <p class="p1">7. Use as clarification of code.</p>
+                    <p class="p1">8. Use as warning of consequences.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Source code structure</h3>
+                    <p class="p1">1. Separate concepts vertically.</p>
+                    <p class="p1">2. Related code should appear vertically dense.</p>
+                    <p class="p1">3. Declare variables close to their usage.</p>
+                    <p class="p1">4. Dependent functions should be close.</p>
+                    <p class="p1">5. Similar functions should be close.</p>
+                    <p class="p1">6. Place functions in the downward direction.</p>
+                    <p class="p1">7. Keep lines short.</p>
+                    <p class="p1">8. Don&#39;t use horizontal alignment.</p>
+                    <p class="p1">9. Use white space to associate related things and disassociate weakly related.</p>
+                    <p class="p1">10. Don&#39;t break indentation.</p>
+                    <p class="p2"><br></p>
+                    <h3 class="p1">Objects and data structures</h3>
+                    <p class="p1">1. Hide internal structure.</p>
+                    <p class="p1">2. Prefer data structures.</p>
+                    <p class="p1">3. Avoid hybrids structures (half object and half data).</p>
+                    <p class="p1">4. Should be small.</p>
+                    <p class="p1">5. Do one thing.</p>
+                    <p class="p1">6. Small number of instance variables.</p>
+                    <p class="p1">7. Base class should know nothing about their derivatives.</p>
+                    <p class="p1">8. Better to have many functions than to pass some code into a function to select a behavior.</p>
+                    <p class="p1">9. Prefer non-static methods to static methods.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Tests</h3>
+                    <p class="p1">1. One assert per test.</p>
+                    <p class="p1">2. Readable.</p>
+                    <p class="p1">3. Fast.</p>
+                    <p class="p1">4. Independent.</p>
+                    <p class="p1">5. Repeatable.</p>
+                    <p class="p1"><br></p>
+                    <h3 class="p1">Code smells</h3>
+                    <p class="p1">1. Rigidity. The software is difficult to change. A small change causes a cascade of subsequent changes.</p>
+                    <p class="p1">2. Fragility. The software breaks in many places due to a single change.</p>
+                    <p class="p1">3. Immobility. You cannot reuse parts of the code in other projects because of involved risks and high effort.</p>
+                    <p class="p1">4. Needless Complexity.</p>
+                    <p class="p1">5. Needless Repetition.</p>
+                    <p class="p1">6. Opacity. The code is hard to understand.</p> 
+                </div>				
+		    </div><!--//container-->
+        </article>
+        
+	    
+	    <footer class="navbar fixed-bottom footer text-center py-2 theme-bg-dark">
+                <small class="copyright">Designed with <i class="fas fa-heart" style="color: #fb866a;"></i> for developers</small>
+	    </footer>
+    
+    </div><!--//main-wrapper-->
+       
+    <!-- Javascript -->          
+    <script src="../assets/plugins/jquery-3.3.1.min.js"></script>
+    <script src="../assets/plugins/popper.min.js"></script> 
+    <script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script> 
+</body>
+</html> 
